@@ -3,7 +3,7 @@ import { IsDate, IsNotEmpty, IsString } from 'class-validator';
 export class CreateFilmeDto {
   @IsString()
   @IsNotEmpty()
-  Titulo: string;
+  titulo: string;
 
   @IsString()
   @IsNotEmpty()
@@ -11,11 +11,11 @@ export class CreateFilmeDto {
 
   @IsString()
   @IsNotEmpty()
-  Cover: string;
+  cover: string;
 
   @IsDate()
   @IsNotEmpty()
-  anoLancamento: Date;
+  anoLancamento: number;
 
   @IsString()
   @IsNotEmpty()
@@ -25,10 +25,3 @@ export class CreateFilmeDto {
   @IsNotEmpty()
   mediaImbd: string;
 }
-
-// Titulo
-// Capa
-// Cover
-// Ano de lançamento
-// Generos
-// Média IMDB

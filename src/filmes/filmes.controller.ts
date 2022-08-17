@@ -26,17 +26,17 @@ export class FilmesController {
   }
 
   @Get(':id')
-  findOne(@Param('id') id: string) {
-    return this.filmesService.findOne(+id);
+  findOneBy(@Param('id') id: string) {
+    return this.filmesService.findOneBy(id);
   }
 
   @Patch(':id')
   update(@Param('id') id: string, @Body() updateFilmeDto: UpdateFilmeDto) {
-    return this.filmesService.update(+id, updateFilmeDto);
+    return this.filmesService.update(id, updateFilmeDto);
   }
 
   @Delete(':id')
   remove(@Param('id') id: string) {
-    return this.filmesService.remove(+id);
+    return this.filmesService.remove(id);
   }
 }

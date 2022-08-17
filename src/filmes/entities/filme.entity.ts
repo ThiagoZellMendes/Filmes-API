@@ -1,9 +1,3 @@
-// Titulo
-// Capa
-// Cover
-// Ano de lançamento
-// Generos
-// Média IMDB
 import {
   BaseEntity,
   Column,
@@ -42,7 +36,7 @@ export class Filme extends BaseEntity {
 
   @Column({
     name: 'ano_lancamento',
-    type: 'date',
+    type: 'number',
     nullable: false,
     length: 4,
   })
