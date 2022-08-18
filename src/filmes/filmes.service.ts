@@ -21,7 +21,7 @@ export class FilmesService {
   }
 
   async findOneBy(id: string): Promise<Filme> {
-    const filme = await this.repository.findOneBy({ id: id.toString() });
+    const filme = await this.repository.findOneBy({ id: id });
     return filme;
   }
 
@@ -33,7 +33,7 @@ export class FilmesService {
     if (!filme) {
       throw new NotFoundException(`Item ${id} not found`);
     }
-    return this.repository.save(Filme);
+    return this.repository.save(filme);
   }
 
   async remove(id: string) {
