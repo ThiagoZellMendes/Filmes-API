@@ -1,6 +1,7 @@
 import {
   BaseEntity,
   Column,
+  CreateDateColumn,
   Entity,
   PrimaryGeneratedColumn,
   UpdateDateColumn,
@@ -16,7 +17,14 @@ export class Filme extends BaseEntity {
     type: 'timestamp',
     default: () => 'CURRENT_TIMESTAMP',
   })
-  updateAT: Date;
+  updateAt: Date;
+
+  @CreateDateColumn({
+    name: 'create_at',
+    type: 'timestamp',
+    default: () => 'CURRENT_TIMESTAMP',
+  })
+  createAt: Date;
 
   @Column({
     name: 'description',
@@ -36,11 +44,10 @@ export class Filme extends BaseEntity {
 
   @Column({
     name: 'ano_lancamento',
-    type: 'number',
+    type: 'varchar',
     nullable: false,
-    length: 4,
   })
-  anoLancamento: number;
+  anoLancamento: string;
 
   @Column({
     name: 'generos',
@@ -52,9 +59,8 @@ export class Filme extends BaseEntity {
 
   @Column({
     name: 'media_imdb',
-    type: 'number',
+    type: 'varchar',
     nullable: false,
-    length: 2,
   })
-  mediaImdb: number;
+  mediaImdb: string;
 }
