@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  postgres:
+    image: postgis/postgis
+    environment:
+      - POSTGRES_USERNAME=postgres
+      - POSTGRES_PASSWORD=147852jack
+      - POSTGRES_DB=FILMES_API
+    ports:
+      - 5432:5432
+    volumes:
+      - ./db/postgres_data:/var/lib/postgresql/data
