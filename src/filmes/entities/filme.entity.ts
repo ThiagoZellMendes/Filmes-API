@@ -27,6 +27,14 @@ export class Filme extends BaseEntity {
   createAt: Date;
 
   @Column({
+    name: 'front_cover_url',
+    type: 'varchar',
+    nullable: false,
+    length: 255,
+  })
+  frontCoverURL: string;
+
+  @Column({
     name: 'description',
     type: 'varchar',
     nullable: false,
@@ -43,24 +51,24 @@ export class Filme extends BaseEntity {
   cover: string;
 
   @Column({
-    name: 'ano_lancamento',
+    name: 'year_release',
     type: 'varchar',
     nullable: false,
   })
-  anoLancamento: string;
+  yearRelease: string;
 
   @Column({
-    name: 'generos',
+    name: 'genre',
     type: 'varchar',
     nullable: false,
     length: 255,
   })
-  generos: string;
+  genre: string;
 
   @Column({
-    name: 'media_imdb',
+    name: 'average_imdb',
     type: 'varchar',
     nullable: false,
   })
-  mediaImdb: string;
+  averageImdb: string;
 }

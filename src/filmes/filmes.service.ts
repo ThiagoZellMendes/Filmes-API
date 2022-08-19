@@ -31,7 +31,7 @@ export class FilmesService {
       ...updateFilmeDto,
     });
     if (!filme) {
-      throw new NotFoundException(`Item ${id} not found`);
+      throw new NotFoundException(`Movie ${id} not found`);
     }
     return this.repository.save(filme);
   }

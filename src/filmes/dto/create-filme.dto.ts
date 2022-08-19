@@ -2,10 +2,15 @@ import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 import { IsNotEmpty, IsOptional, IsString } from 'class-validator';
 
 export class CreateFilmeDto {
+  @ApiProperty({ example: 'URL CAPA' })
+  @IsString()
+  @IsNotEmpty()
+  frontCoverURL: string;
+
   @ApiProperty({ example: 'Final Fantasy' })
   @IsString()
   @IsNotEmpty()
-  titulo: string;
+  title: string;
 
   @ApiProperty({ example: 'Animação baseada em jogos da serie Final Fantasy' })
   @IsString()
@@ -20,15 +25,15 @@ export class CreateFilmeDto {
   @ApiProperty({ example: '2018' })
   @IsString()
   @IsNotEmpty()
-  anoLancamento: string;
+  yearRelease: string;
 
   @ApiProperty({ example: 'Fantasia/animação' })
   @IsString()
   @IsNotEmpty()
-  generos: string;
+  genre: string;
 
   @ApiProperty({ example: '10.0' })
   @IsString()
   @IsNotEmpty()
-  mediaImdb: string;
+  averageImdb: string;
 }
