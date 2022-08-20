@@ -10,7 +10,7 @@ import {
 @Entity()
 export class User extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  id: string;
+  id?: string;
 
   @UpdateDateColumn({
     name: 'update_at',
@@ -27,18 +27,17 @@ export class User extends BaseEntity {
   createAt: Date;
 
   @Column({
+    unique: true,
     name: 'email',
     type: 'varchar',
     nullable: false,
-    length: 255,
   })
   email: string;
 
   @Column({
-    name: 'passaword',
+    name: 'password',
     type: 'varchar',
     nullable: false,
-    length: 255,
   })
   password: string;
 

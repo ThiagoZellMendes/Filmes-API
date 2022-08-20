@@ -16,8 +16,8 @@ export class UserController {
   constructor(private readonly userService: UserService) {}
 
   @Post()
-  create(@Body() createUserDto: CreateUserDto) {
-    return this.userService.create(createUserDto);
+  async create(@Body() createUserDto: CreateUserDto) {
+    return await this.userService.create(createUserDto);
   }
 
   @Get()
@@ -25,9 +25,9 @@ export class UserController {
     return this.userService.findAll();
   }
 
-  @Get(':id')
-  findOneBy(@Param('id') id: string) {
-    return this.userService.findOneBy(id);
+  @Get(':email')
+  findByEmail(@Body('email') email: string) {
+    return this.userService.findByEmail(email);
   }
 
   @Patch(':id')
