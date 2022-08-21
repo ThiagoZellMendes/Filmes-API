@@ -8,6 +8,7 @@ import { UserModule } from './user/user.module';
 import { AuthController } from './auth/auth.controller';
 import { AuthService } from './auth/auth.service';
 import { AuthModule } from './auth/auth.module';
+import { JwtModule } from '@nestjs/jwt';
 
 @Module({
   imports: [
@@ -25,6 +26,11 @@ import { AuthModule } from './auth/auth.module';
     FilmesModule,
     UserModule,
     AuthModule,
+    UserModule,
+    JwtModule.register({
+      secret: process.env.JWT_SECRET_KEY,
+      signOptions: { expiresIn: '15d' },
+    }),
   ],
   controllers: [AppController, AuthController],
   providers: [AppService, AuthService],
