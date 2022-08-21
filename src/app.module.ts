@@ -5,12 +5,14 @@ import { FilmesModule } from './filmes/filmes.module';
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { UserModule } from './user/user.module';
-import { AuthController } from './auth/auth.controller';
 import { AuthService } from './auth/auth.service';
 import { AuthModule } from './auth/auth.module';
 import { JwtModule } from '@nestjs/jwt';
 import { APP_GUARD } from '@nestjs/core';
 import { JwtAuthGuard } from './auth/guards/jwt.auth.guard';
+import * as dotenv from 'dotenv';
+
+dotenv.config();
 
 @Module({
   imports: [
@@ -30,7 +32,7 @@ import { JwtAuthGuard } from './auth/guards/jwt.auth.guard';
     AuthModule,
     JwtModule.register({
       secret: process.env.JWT_SECRET_KEY,
-      signOptions: { expiresIn: '15d' },
+      signOptions: { expiresIn: process.env.IS_EXPIRATION_IN },
     }),
   ],
   controllers: [AppController],

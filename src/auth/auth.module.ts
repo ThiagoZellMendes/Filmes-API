@@ -6,13 +6,15 @@ import { AuthService } from './auth.service';
 import { LoginValidationMiddleware } from './middleware/login-validation.middleware';
 import { JwtStrategy } from './strategies/jwt.strategy';
 import { LocalStrategy } from './strategies/local.strategy';
+import * as dotenv from 'dotenv';
 
+dotenv.config();
 @Module({
   imports: [
     UserModule,
     JwtModule.register({
       secret: process.env.JWT_SECRET_KEY,
-      signOptions: { expiresIn: process.env.IS_EXPIRATION },
+      signOptions: { expiresIn: process.env.IS_EXPIRATION_IN },
     }),
   ],
   controllers: [AuthController],
