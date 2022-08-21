@@ -9,6 +9,8 @@ import { AuthController } from './auth/auth.controller';
 import { AuthService } from './auth/auth.service';
 import { AuthModule } from './auth/auth.module';
 import { JwtModule } from '@nestjs/jwt';
+import { APP_GUARD } from '@nestjs/core';
+import { JwtAuthGuard } from './auth/guards/jwt.auth.guard';
 
 @Module({
   imports: [
@@ -26,13 +28,19 @@ import { JwtModule } from '@nestjs/jwt';
     FilmesModule,
     UserModule,
     AuthModule,
-    UserModule,
     JwtModule.register({
       secret: process.env.JWT_SECRET_KEY,
       signOptions: { expiresIn: '15d' },
     }),
   ],
-  controllers: [AppController, AuthController],
-  providers: [AppService, AuthService],
+  controllers: [AppController],
+  providers: [
+    AppService,
+    {
+      provide: APP_GUARD,
+      useClass: JwtAuthGuard,
+    },
+    AuthService,
+  ],
 })
 export class AppModule {}
