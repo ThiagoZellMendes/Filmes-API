@@ -38,13 +38,14 @@ export class UserService {
     }
   }
 
-  findByEmail(email: string): Promise<User> {
-    const emailUser = this.repository.findOneBy({ email: email });
+  async findByEmail(email: string): Promise<User> {
+    const emailUser = await this.repository.findOneBy({ email: email });
     return emailUser;
   }
-
   findAll(): Promise<User[]> {
-    return this.repository.find();
+    return this.repository.find({
+      select: ['id', 'name', 'email', 'roleAdmin'],
+    });
   }
 
   findOneBy(id: string): Promise<User> {
