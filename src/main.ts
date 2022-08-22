@@ -20,6 +20,7 @@ async function bootstrap() {
     .setTitle('Filmes Mania API')
     .setDescription('API de Filmes para você')
     .setVersion('1.0')
+    .addTag('Movies API')
     .build();
 
   const document = SwaggerModule.createDocument(app, config);
