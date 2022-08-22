@@ -35,6 +35,14 @@ export class Filme extends BaseEntity {
   frontCoverURL: string;
 
   @Column({
+    name: 'title',
+    type: 'varchar',
+    nullable: false,
+    length: 255,
+  })
+  title: string;
+
+  @Column({
     name: 'description',
     type: 'varchar',
     nullable: false,

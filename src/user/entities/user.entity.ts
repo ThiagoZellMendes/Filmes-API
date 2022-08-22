@@ -27,6 +27,13 @@ export class User extends BaseEntity {
   createAt: Date;
 
   @Column({
+    name: 'role_admin',
+    type: 'boolean',
+    nullable: false,
+  })
+  roleAdmin: boolean;
+
+  @Column({
     unique: true,
     name: 'email',
     type: 'varchar',
