@@ -27,22 +27,22 @@ dotenv.config();
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
       synchronize: process.env.DB_SYNCHRONIZE === 'true',
     }),
-    FilmesModule,
     UserModule,
     AuthModule,
     JwtModule.register({
       secret: process.env.JWT_SECRET_KEY,
       signOptions: { expiresIn: process.env.IS_EXPIRATION_IN },
     }),
+    FilmesModule,
   ],
   controllers: [AppController],
   providers: [
+    AuthService,
     AppService,
     {
       provide: APP_GUARD,
       useClass: JwtAuthGuard,
     },
-    AuthService,
   ],
 })
 export class AppModule {}
