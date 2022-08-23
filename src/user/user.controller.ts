@@ -38,6 +38,7 @@ export class UserController {
 
   @Get(':email')
   @Roles(RoleUsers.USER, RoleUsers.ADMIN)
+  @UseGuards(RolesGuard)
   @ApiTags('User')
   findByEmail(@Body('email') email: string) {
     return this.userService.findByEmail(email);

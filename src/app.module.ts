@@ -2,12 +2,14 @@ import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { APP_GUARD } from '@nestjs/core';
 import { JwtModule } from '@nestjs/jwt';
+import { PassportModule } from '@nestjs/passport';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import * as dotenv from 'dotenv';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { AuthModule } from './auth/auth.module';
 import { JwtAuthGuard } from './auth/guards/jwt.auth.guard';
+import { SessionSerializer } from './auth/session/sessionSerializer';
 import { FilmesModule } from './filmes/filmes.module';
 import { UserModule } from './user/user.module';
 
@@ -30,6 +32,9 @@ dotenv.config();
       secret: process.env.JWT_SECRET_KEY,
       signOptions: { expiresIn: process.env.IS_EXPIRATION_IN },
     }),
+    PassportModule.register({
+      session: true,
+    }),
     UserModule,
     AuthModule,
     FilmesModule,
@@ -41,6 +46,7 @@ dotenv.config();
       provide: APP_GUARD,
       useClass: JwtAuthGuard,
     },
+    SessionSerializer,
   ],
 })
 export class AppModule {}
