@@ -6,6 +6,7 @@ import {
   PrimaryGeneratedColumn,
   UpdateDateColumn,
 } from 'typeorm';
+import { RoleUsers } from './role.enum';
 
 @Entity()
 export class User extends BaseEntity {
@@ -27,11 +28,11 @@ export class User extends BaseEntity {
   createAt: Date;
 
   @Column({
-    name: 'role_admin',
-    type: 'boolean',
-    nullable: false,
+    type: 'enum',
+    enum: RoleUsers,
+    default: RoleUsers.USER,
   })
-  roleAdmin: boolean;
+  roleUsers: RoleUsers;
 
   @Column({
     unique: true,
