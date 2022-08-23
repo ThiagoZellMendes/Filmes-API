@@ -1,6 +1,5 @@
 import { MiddlewareConsumer, Module, NestModule } from '@nestjs/common';
 import { JwtModule } from '@nestjs/jwt';
-import { PassportModule } from '@nestjs/passport';
 import * as dotenv from 'dotenv';
 import { UserModule } from 'src/user/user.module';
 import { AuthController } from './auth.controller';
@@ -18,7 +17,6 @@ dotenv.config();
       secret: process.env.JWT_SECRET_KEY,
       signOptions: { expiresIn: process.env.IS_EXPIRATION_IN },
     }),
-    PassportModule.register({ session: false }),
   ],
   controllers: [AuthController],
   providers: [AuthService, LocalStrategy, JwtStrategy, RolesGuard],

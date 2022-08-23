@@ -8,7 +8,6 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { AuthModule } from './auth/auth.module';
 import { JwtAuthGuard } from './auth/guards/jwt.auth.guard';
-import { RolesGuard } from './auth/guards/roles.guard';
 import { FilmesModule } from './filmes/filmes.module';
 import { UserModule } from './user/user.module';
 
@@ -27,13 +26,13 @@ dotenv.config();
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
       synchronize: process.env.DB_SYNCHRONIZE === 'true',
     }),
-    UserModule,
-    AuthModule,
-    FilmesModule,
     JwtModule.register({
       secret: process.env.JWT_SECRET_KEY,
       signOptions: { expiresIn: process.env.IS_EXPIRATION_IN },
     }),
+    UserModule,
+    AuthModule,
+    FilmesModule,
   ],
   controllers: [AppController],
   providers: [
