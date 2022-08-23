@@ -44,7 +44,7 @@ export class UserService {
   }
   findAll(): Promise<User[]> {
     return this.repository.find({
-      select: ['id', 'name', 'email', 'roleAdmin'],
+      select: ['id', 'name', 'email', 'roleUsers'],
     });
   }
 
@@ -57,11 +57,21 @@ export class UserService {
     const user = await this.repository.preload({
       id: id,
       ...updateUserDto,
+      password: await bcrypt.hash(updateUserDto.password, 10),
     });
     if (!user) {
       throw new NotFoundException(`User ${id} not found`);
     }
-    return this.repository.save(user);
+
+    try {
+      await user.save();
+      delete user.password;
+      return user;
+    } catch (error) {
+      throw new InternalServerErrorException(
+        'Error to save user on the dabase: ' + error,
+      );
+    }
   }
 
   async remove(id: string) {
