@@ -56,7 +56,6 @@ As seguintes ferramentas foram usadas na construção e execução do projeto:
 - [Nestjs][nestjs]
 - [Node.js][nodejs]
 - [TypeScript][typescript]
-- [Nestjs][nestjs]
 - [VsCode][vscode]
 - [TypeORM][typeorm]
 - [Swagger][swagger]
