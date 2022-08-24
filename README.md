@@ -29,10 +29,10 @@ Foram ultilizadas estrategias de segurança dentro da API como:
 
 ### User: 
 
-- Criar User
-- Editar User
-- Deletar User
-- Atualizar User
+- Criar User(Apenas User administrador)
+- Editar User(Apenas User administrador)
+- Deletar User(Apenas User administrador)
+- Atualizar User(Apenas User administrador)
 - Listar Users
 - Listar User por Email
 - login do users(Apenas User administrador)
