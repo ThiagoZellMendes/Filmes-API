@@ -1,0 +1,384 @@
+_type: export
+__export_format: 4
+__export_date: 2022-08-24T01:54:18.461Z
+__export_source: insomnia.desktop.app:v2022.5.0
+resources:
+  - _id: req_5c49bad9a25440908fbf7b3640e2d1e8
+    parentId: fld_0efffbeddbbd4e8fb51031437e00d302
+    modified: 1661305970870
+    created: 1661128685259
+    url: "{{ _.baseURL }}/login"
+    name: Login
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"email": "ceciliamendes@gmail.com",
+        	"password": "2222Ab"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_232f56406ad841a59f878afe47e0449e
+    authentication:
+      type: bearer
+      disabled: false
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwZTdjNmVjMS04YjUyLTRmMWMtYjUxNC04M2I4MzU1MzBmODEiLCJlbWFpbCI6InRoaWFnb21lbmRlc0BnbWFpbC5jb20iLCJuYW1lIjoiVGhpYWdvIE1lbmRlcyIsInJvbGVVc2VycyI6ImFkbWluIiwiaWF0IjoxNjYxMjgyNzExLCJleHAiOjE2NjI1Nzg3MTF9.l2Toj-D4t1kmjOz_ilZa2HbtNhHqJwwSgUyufM7_mTw
+    metaSortKey: -1661126213577.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_0efffbeddbbd4e8fb51031437e00d302
+    parentId: wrk_75c1bc63c22e443a9b94186b930558b3
+    modified: 1661128683496
+    created: 1661128683496
+    name: Login
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1661128683496
+    _type: request_group
+  - _id: wrk_75c1bc63c22e443a9b94186b930558b3
+    parentId: null
+    modified: 1660695804044
+    created: 1660695804044
+    name: ApiFIlmes
+    description: ""
+    scope: design
+    _type: workspace
+  - _id: req_49e7519516c84fe5a6a849b901a148a2
+    parentId: fld_a67437ae5994483b97dea95f676f92a4
+    modified: 1661132770513
+    created: 1661132731706
+    url: "{{ _.baseURL }}/user/4dcaebd1-f43d-4493-a7f9-d498490a04e6"
+    name: Delete- User
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1661124749418
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_a67437ae5994483b97dea95f676f92a4
+    parentId: wrk_75c1bc63c22e443a9b94186b930558b3
+    modified: 1661123743659
+    created: 1661123743659
+    name: User
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1661123743659
+    _type: request_group
+  - _id: req_1ec4ea4e641a4fcbb3a8e6a378771469
+    parentId: fld_a67437ae5994483b97dea95f676f92a4
+    modified: 1661305985200
+    created: 1661124749368
+    url: "{{ _.baseURL }}/user"
+    name: Create-User
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "tunico",
+        	"password": "Tu123",
+        	"roleUsers": "user",
+        	"email": "tunicomendes@gmail.com"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_c5feeab258274e79b1c09f46709d50d4
+    authentication:
+      type: bearer
+      token: ""
+      disabled: false
+    metaSortKey: -1661124749368
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_b3ca99722d13423eb5f4b7af1993b235
+    parentId: fld_a67437ae5994483b97dea95f676f92a4
+    modified: 1661305969844
+    created: 1661124487768
+    url: "{{ _.baseURL }}/user/email/"
+    name: Find-By-Email
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"email": "thiagomendes@gmail.com"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_0b4e9dff06d8458aa591b155f3e99627
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwZTdjNmVjMS04YjUyLTRmMWMtYjUxNC04M2I4MzU1MzBmODEiLCJlbWFpbCI6InRoaWFnb21lbmRlc0BnbWFpbC5jb20iLCJuYW1lIjoiVGhpYWdvIE1lbmRlcyIsInJvbGVVc2VycyI6ImFkbWluIiwiaWF0IjoxNjYxMjgyNzExLCJleHAiOjE2NjI1Nzg3MTF9.l2Toj-D4t1kmjOz_ilZa2HbtNhHqJwwSgUyufM7_mTw
+    metaSortKey: -1661123745252
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_4c2156335cf343d4a93f09d19e69add4
+    parentId: fld_a67437ae5994483b97dea95f676f92a4
+    modified: 1661292882005
+    created: 1661123745202
+    url: "{{ _.baseURL }}/user"
+    name: All-User
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_9bf92b82ba7c441c87b29b1ca4f80104
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwZTdjNmVjMS04YjUyLTRmMWMtYjUxNC04M2I4MzU1MzBmODEiLCJlbWFpbCI6InRoaWFnb21lbmRlc0BnbWFpbC5jb20iLCJuYW1lIjoiVGhpYWdvIE1lbmRlcyIsInJvbGVVc2VycyI6ImFkbWluIiwiaWF0IjoxNjYxMjgyNzExLCJleHAiOjE2NjI1Nzg3MTF9.l2Toj-D4t1kmjOz_ilZa2HbtNhHqJwwSgUyufM7_mTw
+    metaSortKey: -1661123745202
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_ac87d0706d2f4f76b78c8f330dd7b296
+    parentId: fld_2cc86a5a91134af8b22aad051b63b942
+    modified: 1661305951338
+    created: 1660695834862
+    url: "{{ _.baseURL }}/filmes"
+    name: Criar-Filme
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: >-2
+          {
+            "title": "Sonic the Hedgehog 2",
+            "description": "After settling in Green Hills, Sonic is eager to prove he has what it takes to be a true hero.",
+            "frontCoverURL": "https://image.tmdb.org/t/p/w500/6DrHO1jr3qVrViUO6s6kFiAGM7.jpg",
+            "yearRelease": "2019",
+            "genre": "Animação",
+            "averageImdb": "9.7",
+            "cover": "back"
+          }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_365f272079484ed6858b58a7e727f1c1
+    authentication:
+      type: bearer
+    metaSortKey: -1660701420126
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_2cc86a5a91134af8b22aad051b63b942
+    parentId: wrk_75c1bc63c22e443a9b94186b930558b3
+    modified: 1661123731216
+    created: 1661123731216
+    name: Filmes
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1661123731216
+    _type: request_group
+  - _id: req_ed898e6dda6d42fda91225ceb0d16ccb
+    parentId: fld_2cc86a5a91134af8b22aad051b63b942
+    modified: 1661199347794
+    created: 1660701411250
+    url: "{{ _.baseURL }}/filmes/adad91b2-efb2-4252-99ea-ec5616078519"
+    name: Delete-Filme
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjNDMxNDE2MS1lNDk2LTQ0M2EtYjNkMy1mYTc5YWZhNDE0NjQiLCJlbWFpbCI6ImNlY2lsaWFtZW5kZXNAZ21haWwuY29tIiwibmFtZSI6IkNlY2lsaWFtZW5kZXMiLCJpYXQiOjE2NjExOTg5ODIsImV4cCI6MTY2MjQ5NDk4Mn0.LUalVTE6VqGaZ_ediP_6aAg7WOph2uDi7rntkE3ahG8
+    metaSortKey: -1660701420076
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_a7f86633370c4f4291266a9c8e43f595
+    parentId: fld_2cc86a5a91134af8b22aad051b63b942
+    modified: 1661131744279
+    created: 1660701418825
+    url: "{{ _.baseURL }}/filmes/d2a68dc5-3a2c-4af0-8bae-6e44d5888b55"
+    name: Buscar-Filme-Id
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1660701420069.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_0001f8a4d5a5492ca281af4c495337bf
+    parentId: fld_2cc86a5a91134af8b22aad051b63b942
+    modified: 1661305931868
+    created: 1660701224107
+    url: "{{ _.baseURL }}/filmes/"
+    name: Find-For-Order
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"genre": "Horror"
+        }
+    parameters:
+      - id: pair_cd607925bfea4a328440e0a7e9d1bd9a
+        name: ""
+        value: ""
+        description: ""
+      - id: pair_068d061b62b84fdda60297898f2ad00b
+        name: ""
+        value: ""
+        description: ""
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_5236d760378846fda588a1dfc87c0049
+    authentication:
+      type: bearer
+      token: ""
+    metaSortKey: -1660701420063.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_3cf50c1b02144e2a8c88753b917017b1
+    parentId: fld_2cc86a5a91134af8b22aad051b63b942
+    modified: 1661292998612
+    created: 1660701420051
+    url: "{{ _.baseURL }}/filmes/0e7c6ec1-8b52-4f1c-b514-83b835530f81"
+    name: Editar-Filme
+    description: ""
+    method: PATCH
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "Thiago Silva Mendes",
+        	"password": "0606Ab",
+        	"roleUsers": "admin",
+        	"email": "thiagomendes@gmail.com"
+        	
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_1b2d0c3aed3043fd9b152645fb28c30e
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwZTdjNmVjMS04YjUyLTRmMWMtYjUxNC04M2I4MzU1MzBmODEiLCJlbWFpbCI6InRoaWFnb21lbmRlc0BnbWFpbC5jb20iLCJuYW1lIjoiVGhpYWdvIE1lbmRlcyIsInJvbGVVc2VycyI6ImFkbWluIiwiaWF0IjoxNjYxMjgyNzExLCJleHAiOjE2NjI1Nzg3MTF9.l2Toj-D4t1kmjOz_ilZa2HbtNhHqJwwSgUyufM7_mTw
+    metaSortKey: -1660701420051
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_2b96276cea3a9686f148092b4f1c45b2e2644fa2
+    parentId: wrk_75c1bc63c22e443a9b94186b930558b3
+    modified: 1660701289205
+    created: 1660695804049
+    name: Base Environment
+    data:
+      baseURL: http://localhost:3000
+    dataPropertyOrder:
+      "&":
+        - baseURL
+    color: null
+    isPrivate: false
+    metaSortKey: 1660695804049
+    _type: environment
+  - _id: jar_2b96276cea3a9686f148092b4f1c45b2e2644fa2
+    parentId: wrk_75c1bc63c22e443a9b94186b930558b3
+    modified: 1661298150332
+    created: 1660695804051
+    name: Default Jar
+    cookies:
+      - key: connect.sid
+        value: s%3A9iM1VLlueB27HbXWYYOg0eLTh1WyJu5s.o2V%2FGXddtgCTfnkkPHgVJ4Pch3jruYLYZg8Wtw9YDoI
+        expires: 2022-08-23T23:52:30.000Z
+        domain: localhost
+        path: /
+        httpOnly: true
+        hostOnly: true
+        creation: 2022-08-23T23:42:02.138Z
+        lastAccessed: 2022-08-23T23:42:30.332Z
+        id: "056646902858099146"
+    _type: cookie_jar
+  - _id: spc_c9f7245250ae4211ab7963a46171730c
+    parentId: wrk_75c1bc63c22e443a9b94186b930558b3
+    modified: 1660695804045
+    created: 1660695804045
+    fileName: ApiFIlmes
+    contents: ""
+    contentType: yaml
+    _type: api_spec
