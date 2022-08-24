@@ -16,9 +16,16 @@
 
 ## 💻 Sobre o projeto
 
-:book: Filmes Mania é uma API de filmes REST FULL, para visualização de sinopses e capas dos mesmos.
+:book: Filmes Mania é uma API de filmes, para visualização de sinopses e capas dos mesmos.
 
 ## Principais Features do Projeto:
+
+Foram ultilizadas estrategias de segurança dentro da API como:
+
+- Autenticação JWT para toda API;
+- Estrategia de Guardiões para as rotas publicas, Users e administradores;
+- Padrão RestFULL;
+- Decorators Customizados para seguraça das rotas; 
 
 ### User: 
 
@@ -28,6 +35,7 @@
 - Atualizar User
 - Listar Users
 - Listar User por Email
+- login do users(Apenas User administrador)
 
 ### Filmes
 
@@ -44,7 +52,7 @@
       - Média IMDB;
       - Gênero;
       - Ano de Lançamento;
-    ```
+    ``` 
     
 ## 🌱  Dados Adcionais:
    - [x] Aqui estão os arquivos do Insomnia e um .Json para popular o banco de dados de filmes [Link][link]
