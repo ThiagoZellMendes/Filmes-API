@@ -16,7 +16,7 @@
 
 ## 💻 Sobre o projeto
 
-:book: Filmes Mania é uma API de filmes REST FULL, para vizualização de sinopses e capas dos mesmos.
+:book: Filmes Mania é uma API de filmes REST FULL, para visualização de sinopses e capas dos mesmos.
 
 ## Principais Features do Projeto:
 
@@ -36,13 +36,13 @@
 - Deletar Filmes(Apenas User Administrador)
 - Atualizar Filmes(Apenas User administrador)
 - Listar Filmes com paginação de 10 em 10
-- Listar e Ordernar por parâmentro escolhido pelo desenvolvedor;
+- Listar e Ordernar por parâmetro escolhido pelo desenvolvedor;
     
     ```bash
-      # Os paramentro são:
+      # Os parâmetros são:
       - Titulo;
       - Média IMDB;
-      - Genero;
+      - Gênero;
       - Ano de Lançamento;
     ```
     
