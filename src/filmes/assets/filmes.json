@@ -1,137 +1,146 @@
 [
-{
-    "title": "Top Gun: Maverick",
-    "description": "After more than thirty years of service as one of the Navy’s top aviators",
-    "frontCoverURL": "https://image.tmdb.org/t/p/w500/62HCnUTziyWcpDaBO2i1DX17ljH.jpg",
-    "yearRelease": "2022",
-    "genre": "ação",
-    "averageImdb": "1.0",
-    "cover": "back"
-  },
   {
-    "title": "Day Shift",
-    "description": "An LA vampire hunter has a week to come up with the cash to pay for his kid's tuition and braces.",
-    "frontCoverURL": "https://image.tmdb.org/t/p/w500/62HCnUTziyWcpDaBO2i1DX17ljH.jpg",
-    "yearRelease": "2022",
-    "genre": "ação",
-    "averageImdb": "7.0",
-    "cover": "back"
-  },
-  {
-    "title": "The Black Phone",
-    "description": "Finney Blake, a shy but clever 13-year-old boy, is abducted by a sadistic killer and trapped in a soundproof",
-    "frontCoverURL": "https://image.tmdb.org/t/p/w500/lr11mCT85T1JanlgjMuhs9nMht4.jpg",
-    "yearRelease": "2022",
-    "genre": "ação",
-    "averageImdb": "1.0",
-    "cover": "back"
-  },
-  {
-    "title": "Luck",
-    "description": "Suddenly finding herself in the never-before-seen Land of Luck",
-    "frontCoverURL": "https://image.tmdb.org/t/p/w500/1HOYvwGFioUFL58UVvDRG6beEDm.jpg",
-    "yearRelease": "2022",
-    "genre": "ação",
-    "averageImdb": "1.0",
-    "cover": "back"
-  },
-  {
-    "title": "Lightyear",
-    "description": "Legendary Space Ranger Buzz Lightyear embarks on an intergalactic",
-    "frontCoverURL": "https://image.tmdb.org/t/p/w500/ox4goZd956BxqJH6iLwhWPL9ct4.jpg",
-    "yearRelease": "2022",
-    "genre": "ação",
-    "averageImdb": "1.0",
-    "cover": "back"
-  },
-  {
-    "title": "Doctor Strange",
-    "description": "Doctor Strange, with the help of mystical allies both old and new",
-    "frontCoverURL": "https://image.tmdb.org/t/p/w500/9Gtg2DzBhmYamXBS1hKAhiwbBKS.jpg",
-    "yearRelease": "2022",
-    "genre": "ação",
-    "averageImdb": "1.0",
-    "cover": "back"
-  },
-  {
-    "title": "Top Gun: Maverick",
-    "description": "After more than thirty years of service as one of the Navy’s top aviators",
-    "frontCoverURL": "https://image.tmdb.org/t/p/w500/62HCnUTziyWcpDaBO2i1DX17ljH.jpg",
-    "yearRelease": "2022",
-    "genre": "ação",
-    "averageImdb": "1.0",
-    "cover": "back"
-  },
-  {
+    "frontCoverURL": "https://image.tmdb.org/t/p/w500/7aju8OJ2F7jHkKJ68jfM6DGzMMD.jpg",
     "title": "Las Leyendas: El Origen",
     "description": "When a human baby crosses the Eternal Mirror, the portal between the living",
-    "frontCoverURL": "https://image.tmdb.org/t/p/w500/7aju8OJ2F7jHkKJ68jfM6DGzMMD.jpg",
-    "yearRelease": "2022",
-    "genre": "ação",
-    "averageImdb": "1.0",
-    "cover": "back"
+    "cover": "back",
+    "yearRelease": "1994",
+    "genre": "Horror",
+    "averageImdb": "3.5"
   },
   {
-    "title": "Adanis: Kutsal Kavga",
+    "frontCoverURL": "https://image.tmdb.org/t/p/w500/62HCnUTziyWcpDaBO2i1DX17ljH.jpg",
+    "title": "Top Gun",
     "description": "After more than thirty years of service as one of the Navy’s top aviators",
-    "frontCoverURL": "https://image.tmdb.org/t/p/w500/1G5mt3uGUW5OWUcxcBUtHm5Zdd9.jpg",
-    "yearRelease": "2022",
-    "genre": "ação",
-    "averageImdb": "1.0",
-    "cover": "back"
+    "cover": "back",
+    "yearRelease": "1995",
+    "genre": "Action",
+    "averageImdb": "7.5"
   },
   {
+    "frontCoverURL": "https://image.tmdb.org/t/p/w500/rtfGeS5WMXA6PtikIYUmYTSbVdg.jpg",
     "title": "The Cellar",
     "description": "After more than thirty years of service as one of the Navy’s top aviators",
-    "frontCoverURL": "https://image.tmdb.org/t/p/w500/rtfGeS5WMXA6PtikIYUmYTSbVdg.jpg",
-    "yearRelease": "2022",
-    "genre": "ação",
-    "averageImdb": "1.0",
-    "cover": "back"
+    "cover": "back",
+    "yearRelease": "2005",
+    "genre": "Thriller",
+    "averageImdb": "6.0"
   },
   {
-    "title": "Dragon Knight",
-    "description": "Many years after the war has been lost, and all the dragons slain, a lone knight travels",
-    "frontCoverURL": "https://image.tmdb.org/t/p/w500/zkGFADykBtfPfTv7YJooxTH52ph.jpg",
-    "yearRelease": "2022",
-    "genre": "ação",
-    "averageImdb": "1.0",
-    "cover": "back"
+    "frontCoverURL": "https://cdn.ome.lt/J4Dyv7uPYCFG2CF76rHPRk2gPfs=/770x0/smart/uploads/conteudo/fotos/81ywhG4CdL._SL1500_.jpg",
+    "title": "Final Faltasy",
+    "description": "Baseado em jogos da serie Final Fantasy",
+    "cover": "não sei o que é isso?",
+    "yearRelease": "2012",
+    "genre": "Fantasy",
+    "averageImdb": "10.00"
   },
   {
-    "title": "Spider-Man: No Way Home",
-    "description": "Peter Parker is unmasked and no longer able to separate his normal life from",
-    "frontCoverURL": "https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
-    "yearRelease": "2022",
-    "genre": "ação",
-    "averageImdb": "1.0",
-    "cover": "back"
-  },
-  {
+    "frontCoverURL": "https://image.tmdb.org/t/p/w500/8cXbitsS6dWQ5gfMTZdorpAAzEH.jpg",
     "title": "The Gray Man",
     "description": "When a shadowy CIA agent uncovers damning agency secrets, he's hunted across the globe",
-    "frontCoverURL": "https://image.tmdb.org/t/p/w500/8cXbitsS6dWQ5gfMTZdorpAAzEH.jpg",
-    "yearRelease": "2022",
-    "genre": "ação",
-    "averageImdb": "1.0",
-    "cover": "back"
+    "cover": "back",
+    "yearRelease": "2013",
+    "genre": "Cop",
+    "averageImdb": "8.4"
   },
   {
+    "frontCoverURL": "https://image.tmdb.org/t/p/w500/62HCnUTziyWcpDaBO2i1DX17ljH.jpg",
+    "title": "Day Shift",
+    "description": "An LA vampire hunter has a week to come up with the cash to pay for his kid's tuition and braces.",
+    "cover": "back",
+    "yearRelease": "2013",
+    "genre": "Action",
+    "averageImdb": "7.0"
+  },
+  {
+    "frontCoverURL": "https://image.tmdb.org/t/p/w500/zkGFADykBtfPfTv7YJooxTH52ph.jpg",
+    "title": "Dragon Knight",
+    "description": "Many years after the war has been lost, and all the dragons slain, a lone knight travels",
+    "cover": "back",
+    "yearRelease": "2014",
+    "genre": "Fantasy",
+    "averageImdb": "2.5"
+  },
+  {
+    "frontCoverURL": "https://image.tmdb.org/t/p/w500/1G5mt3uGUW5OWUcxcBUtHm5Zdd9.jpg",
+    "title": "Adanis: Kutsal Kavga",
+    "description": "After more than thirty years of service as one of the Navy’s top aviators",
+    "cover": "back",
+    "yearRelease": "2017",
+    "genre": "War",
+    "averageImdb": "9.6"
+  },
+  {
+    "frontCoverURL": "https://image.tmdb.org/t/p/w500/1HOYvwGFioUFL58UVvDRG6beEDm.jpg",
+    "title": "Luck",
+    "description": "Suddenly finding herself in the never-before-seen Land of Luck",
+    "cover": "back",
+    "yearRelease": "2018",
+    "genre": "Comedy",
+    "averageImdb": "5.5"
+  },
+  {
+    "frontCoverURL": "https://image.tmdb.org/t/p/w500/6DrHO1jr3qVrViUO6s6kFiAGM7.jpg",
+    "title": "Sonic the Hedgehog 2",
+    "description": "After settling in Green Hills, Sonic is eager to prove he has what it takes to be a true hero.",
+    "cover": "back",
+    "yearRelease": "2019",
+    "genre": "Animation",
+    "averageImdb": "9.7"
+  },
+  {
+    "frontCoverURL": "https://image.tmdb.org/t/p/w500/lr11mCT85T1JanlgjMuhs9nMht4.jpg",
+    "title": "The Black Phone",
+    "description": "Finney Blake, a shy but clever 13-year-old boy, is abducted by a sadistic killer and trapped in a soundproof",
+    "cover": "back",
+    "yearRelease": "2019",
+    "genre": "Thriller",
+    "averageImdb": "3.5"
+  },
+  {
+    "frontCoverURL": "https://image.tmdb.org/t/p/w500/62HCnUTziyWcpDaBO2i1DX17ljH.jpg",
+    "title": "Top Gun: Maverick",
+    "description": "After more than thirty years of service as one of the Navy’s top aviators",
+    "cover": "back",
+    "yearRelease": "2022",
+    "genre": "Action",
+    "averageImdb": "1.0"
+  },
+  {
+    "frontCoverURL": "https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
+    "title": "Spider-Man: No Way Home",
+    "description": "Peter Parker is unmasked and no longer able to separate his normal life from",
+    "cover": "back",
+    "yearRelease": "2022",
+    "genre": "Adventure",
+    "averageImdb": "9.8"
+  },
+  {
+    "frontCoverURL": "https://image.tmdb.org/t/p/w500/9Gtg2DzBhmYamXBS1hKAhiwbBKS.jpg",
+    "title": "Doctor Strange",
+    "description": "Doctor Strange, with the help of mystical allies both old and new",
+    "cover": "back",
+    "yearRelease": "2022",
+    "genre": "Adventure",
+    "averageImdb": "4.0"
+  },
+  {
+    "frontCoverURL": "https://image.tmdb.org/t/p/w500/kAVRgw7GgK1CfYEJq8ME6EvRIgU.jpg",
     "title": "Jurassic World Dominion",
     "description": "Four years after Isla Nublar was destroyed, dinosaurs now live—and hunt—alongside humans",
-    "frontCoverURL": "https://image.tmdb.org/t/p/w500/kAVRgw7GgK1CfYEJq8ME6EvRIgU.jpg",
+    "cover": "back",
     "yearRelease": "2022",
-    "genre": "ação",
-    "averageImdb": "1.0",
-    "cover": "back"
+    "genre": "Fantasy",
+    "averageImdb": "4.3"
   },
   {
-    "title": "Sonic the Hedgehog 2",
-    "description": "After settling in Green Hills, Sonic is eager to prove he has what it takes to be a true hero. His test",
-    "frontCoverURL": "https://image.tmdb.org/t/p/w500/6DrHO1jr3qVrViUO6s6kFiAGM7.jpg",
+    "frontCoverURL": "https://image.tmdb.org/t/p/w500/ox4goZd956BxqJH6iLwhWPL9ct4.jpg",
+    "title": "Lightyear",
+    "description": "Legendary Space Ranger Buzz Lightyear embarks on an intergalactic",
+    "cover": "back",
     "yearRelease": "2022",
-    "genre": "ação",
-    "averageImdb": "1.0",
-    "cover": "back"
+    "genre": "Animation",
+    "averageImdb": "9.0"
   }
 ]
