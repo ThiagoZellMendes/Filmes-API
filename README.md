@@ -1,73 +1,120 @@
+<h4 align="center"> 
+	🚧 " Desafio API(Filmes Mania API)" 🚀 em construção... 🚧
+</h4>
+
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/ThiagoZellMendes/Filmes-API?color=%2304D361">
+
+ 
+ 
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
+   <a href="https://github.com/ThiagoZellMendes/Filmes-API/stargazers">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/ThiagoZellMendes/Filmes-API?style=social">
+  </a>
 </p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## 💻 Sobre o projeto
 
-## Description
+:book: Filmes Mania é uma API de filmes REST FULL, para vizualização de sinopses e capas dos mesmos.
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## Principais Features do Projeto:
 
-## Installation
+### User: 
+
+- Criar User
+- Editar User
+- Deletar User
+- Atualizar User
+- Listar Users
+- Listar User por Email
+
+### Filmes
+
+- Criar Filmes(Apenas User administrador)
+- Editar Filmes(Apenas User administrador)
+- Deletar Filmes(Apenas User Administrador)
+- Atualizar Filmes(Apenas User administrador)
+- Listar Filmes com paginação de 10 em 10
+- Listar e Ordernar por parâmentro escolhido pelo desenvolvedor;
+    
+    ```bash
+      # Os paramentro são:
+      - Titulo;
+      - Média IMDB;
+      - Genero;
+      - Ano de Lançamento;
+    ```
+    
+## 🌱  Dados Adcionais:
+   - [x] Aqui estão os arquivos do Insomnia e um .Json para popular o banco de dados de filmes [Link][link]
+
+## 🛠 Tecnologias
+
+As seguintes ferramentas foram usadas na construção e execução do projeto:
+
+- [Nestjs][nestjs]
+- [Node.js][nodejs]
+- [TypeScript][typescript]
+- [Nestjs][nestjs]
+- [VsCode][vscode]
+- [TypeORM][typeorm]
+- [Swagger][swagger]
+- [Docker][Docker]
+- [PostgreSQL][postgresql]
+- [Insomnia][insomnia]
+
+## 🚀 Como executar o projeto
+
+### Pré-requisitos
+
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js][nodejs]. 
+Além disto é bom ter um editor para trabalhar com o código como [VSCode][vscode]
+
+### 🎲 Rodando o App:
 
 ```bash
-$ npm install
-```
+# Clone este repositório
+$ git clone https://github.com/ThiagoZellMendes/Filmes-API
 
-## Running the app
+# Acesse a pasta do projeto no terminal/cmd
+$ cd Filmes-API
 
-```bash
-# development
-$ npm run start
+# Instale as dependências
+$ npm install ou Yarn i
 
-# watch mode
-$ npm run start:dev
+# Execute a aplicação:
+$ yarn start: dev
 
-# production mode
-$ npm run start:prod
-```
+``` 
+   
+## 😯 Como contribuir para o projeto
 
-## Test
+1. Faça um **fork** do projeto.
+2. Crie uma nova branch com as suas alterações: `git checkout -b my-feature`
+3. Salve as alterações e crie uma mensagem de commit contando o que você fez: `git commit -m "feature: My new feature"`
+4. Envie as suas alterações: `git push origin my-feature`
+> Caso tenha alguma dúvida confira este [guia de como contribuir no GitHub](https://github.com/firstcontributions/first-contributions)
 
-```bash
-# unit tests
-$ npm run test
 
-# e2e tests
-$ npm run test:e2e
+## 📝 Licença
 
-# test coverage
-$ npm run test:cov
-```
+Este projeto esta sobe a licença MIT.
 
-## Support
+Feito com Muito Carinho por Thiago Mendes 👋🏽 [Entre em contato!](https://www.linkedin.com/in/thiago-mendes-44176249/)
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+[yarn]: https://yarnpkg.com/
+[vscode]: https://code.visualstudio.com/
+[license]: https://opensource.org/licenses/MIT
+[vceslint]: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
+[prettier]: https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+[TypeScript]: https://www.typescriptlang.org/pt/
+[nestjs]: https://nestjs.com
+[nodejs]: https://nodejs.org/en/
+[swagger]: https://swagger.io
+[Docker]: https://www.docker.com
+[postgresql]: https://www.postgresql.org
+[insomnia]: https://insomnia.rest/download
+[typeorm]: https://typeorm.io
+[link]: https://downgit.github.io/#/home?url=https://github.com/ThiagoZellMendes/Filmes-API/tree/master/src/filmes/assets
