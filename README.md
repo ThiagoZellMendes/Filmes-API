@@ -1,5 +1,5 @@
 <h4 align="center"> 
-	🚧 " Desafio API(Filmes Mania API)" 🚀 em construção... 🚧
+	🚧 "Filmes Mania API" 🚀 em construção... 🚧
 </h4>
 
 <p align="center">
